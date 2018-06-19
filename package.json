@@ -1,0 +1,58 @@
+{
+  "name": "swagger2-zy",
+  "version": "1.0.1",
+  "description": "Typescript-based tools for working with Swagger v2.0 documents",
+  "main": "dist/swagger.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yangguangqishimi/swagger2-zy.git"
+  },
+  "keywords": [
+    "swagger",
+    "typescript",
+    "koa",
+    "koa2"
+  ],
+  "author": "yangguangqishimi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yangguangqishimi/swagger2-zy/issues"
+  },
+  "homepage": "https://github.com/yangguangqishimi/swagger2-zy#readme",
+  "typings": "./dist/swagger.d.ts",
+  "dependencies": {
+    "is-my-json-valid": "^2.17.2",
+    "json-schema-deref-sync": "^0.4.0",
+    "yaml-js": "^0.2.3"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.0",
+    "@types/nock": "^9.1.3",
+    "@types/node": "^10.1.2",
+    "@types/yamljs": "^0.2.30",
+    "coveralls": "^3.0.1",
+    "expectations": "^0.7.1",
+    "istanbul": "^1.1.0-alpha.1",
+    "mocha": "^5.2.0",
+    "nock": "^9.2.6",
+    "remap-istanbul": "^0.11.1",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  },
+  "maintainers": [
+    {
+      "email": "fuguili_runtobest@163.com",
+      "name": "yangguangqishimi"
+    }
+  ],
+  "scripts": {
+    "version": "npm run dist && git add -A dist",
+    "postversion": "git push && git push --tags",
+    "build": "rm -rf build && tsc && cp src/schema.json build",
+    "dist": "rm -rf dist && tsc src/typings.d.ts src/swagger.ts -m commonjs --outDir dist --sourcemap --target es2017 --lib es2017 -d --pretty --noImplicitAny && cp src/schema.json dist",
+    "clean": "rm -rf build && rm -rf coverage && rm -rf node_modules",
+    "lint": "tslint -c ./tslint.json --project ./tsconfig.json",
+    "lint:fix": "npm run lint -- --fix",
+    "test": "npm run build && _mocha build"
+  }
+}
