@@ -1,23 +1,23 @@
-[![Build Status](https://travis-ci.org/carlansley/swagger2.svg?branch=master)](https://travis-ci.org/carlansley/swagger2)
-[![Coverage Status](https://coveralls.io/repos/github/carlansley/swagger2/badge.svg?branch=master)](https://coveralls.io/github/carlansley/swagger2?branch=master)
-[![Dependencies](https://david-dm.org/carlansley/swagger2.svg)](https://raw.githubusercontent.com/carlansley/swagger2/master/package.json)
-[![Known Vulnerabilities](https://snyk.io/test/github/carlansley/swagger2/badge.svg)](https://snyk.io/test/github/carlansley/swagger2)
+[![Build Status](https://travis-ci.org/carlansley/swagger2-zy.svg?branch=master)](https://travis-ci.org/carlansley/swagger2-zy)
+[![Coverage Status](https://coveralls.io/repos/github/carlansley/swagger2-zy/badge.svg?branch=master)](https://coveralls.io/github/carlansley/swagger2-zy?branch=master)
+[![Dependencies](https://david-dm.org/carlansley/swagger2-zy.svg)](https://raw.githubusercontent.com/carlansley/swagger2-zy/master/package.json)
+[![Known Vulnerabilities](https://snyk.io/test/github/carlansley/swagger2-zy/badge.svg)](https://snyk.io/test/github/carlansley/swagger2-zy)
 
-# swagger2
+# swagger2-zy
 Loading, parsing and validating requests to HTTP services based on Swagger v2.0 documents.
 
 ## Benefits
 
 * Fast.  Pre-compiled regular expressions and code generation used to validate the inputs and outputs
 of Swagger 2.0 operations at run-time.
-* Typed.  swagger2 is implemented in TypeScript 2, including a fully annotated TypeScript definition of
+* Typed.  swagger2-zy is implemented in TypeScript 2, including a fully annotated TypeScript definition of
 the Swagger 2.0 document object.  Makes working with Swagger objects more pleasant in the IDE of your
 choosing (WebStorm, Atom, etc).
 
 ## Installation
 
 ```shell
-$ npm install swagger2 --save
+$ npm install swagger2-zy --save
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ $ npm install swagger2 --save
 Basic loading and validation of swagger 2.0 document:
 
 ```
-import * as swagger from 'swagger2';
+import * as swagger from 'swagger2-zy';
 
 // load YAML swagger file
 const document = swagger.loadDocumentSync('./swagger.yml');
@@ -105,8 +105,8 @@ function createKoaMiddleware(document: swagger.Document) {
 
 ```
 
-There is a complete implementation of this example/use-case in the <a href="https://github.com/carlansley/swagger2-koa">swagger2-koa</a> module,
-so if you're using Koa 2 it may make sense to use that instead of swagger2 directly.
+There is a complete implementation of this example/use-case in the <a href="https://github.com/carlansley/swagger2-koa">swagger2-zy-koa</a> module,
+so if you're using Koa 2 it may make sense to use that instead of swagger2-zy directly.
 
 ## Limitations
 
@@ -117,9 +117,9 @@ so if you're using Koa 2 it may make sense to use that instead of swagger2 direc
 
 ## Development
 
-First, grab the source from <a href="https://github.com/carlansley/swagger2">GitHub</a>.
+First, grab the source from <a href="https://github.com/yangguangqishimi/swagger2-zy">GitHub</a>.
 
-From within the swagger2 directory, to run tests:
+From within the swagger2-zy directory, to run tests:
 
 ```shell
 $ npm install
