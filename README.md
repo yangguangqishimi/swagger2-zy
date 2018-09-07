@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/yangguangqishimi/swagger2-zy.svg?branch=master)](https://travis-ci.org/yangguangqishimi/swagger2-zy)
-[![Coverage Status](https://coveralls.io/repos/github/yangguangqishimi/swagger2-zy/badge.svg?branch=master)](https://coveralls.io/github/yangguangqishimi/swagger2-zy?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/yangguangqishimi/swagger2-zy/badge.svg)](https://coveralls.io/github/yangguangqishimi/swagger2-zy)
 [![Dependencies](https://david-dm.org/yangguangqishimi/swagger2-zy.svg)](https://raw.githubusercontent.com/yangguangqishimi/swagger2-zy/master/package.json)
 [![Known Vulnerabilities](https://snyk.io/test/github/yangguangqishimi/swagger2-zy/badge.svg)](https://snyk.io/test/github/yangguangqishimi/swagger2-zy)
 
